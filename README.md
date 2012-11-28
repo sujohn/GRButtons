@@ -12,7 +12,7 @@ Avaliable buttons:
 - Flickr
 - Email
 
-<img src="https://github.com/GRButtons/blob/master/buttons_screenshot.png" alt="GRButtons" title="GRButtons" style="display:block; margin: 10px auto 30px auto;" class="center">
+<img src="https://github.com/GRButtons/raw/master/buttons_screenshot.png" alt="GRButtons" title="GRButtons" style="display:block; margin: 10px auto 30px auto;" class="center">
 
 ## Usage
 
