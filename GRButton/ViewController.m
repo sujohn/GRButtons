@@ -85,26 +85,26 @@
 
 
     //// NavigationBar Left Buttons
-    UIBarButtonItem *l1 = [[UIBarButtonItem alloc] initWithCustomView:GRButton(GRTypeMail, 0, 0, 30, self, @selector(action:), color, GRStyleIn)];
-    UIBarButtonItem *l2 = [[UIBarButtonItem alloc] initWithCustomView:GRButton(GRTypeTwitter, 0, 0, 30, self, @selector(action:), color, GRStyleIn)];
-    UIBarButtonItem *l3 = [[UIBarButtonItem alloc] initWithCustomView:GRButton(GRTypeFacebook, 0, 0, 30, self, @selector(action:), color, GRStyleIn)];
-    UIBarButtonItem *l4 = [[UIBarButtonItem alloc] initWithCustomView:GRButton(GRTypeGooglePlus, 0, 0, 30, self, @selector(action:), color, GRStyleIn)];
-    UIBarButtonItem *l5 = [[UIBarButtonItem alloc] initWithCustomView:GRButton(GRTypePinterest, 0, 0, 30, self, @selector(action:), color, GRStyleIn)];
-    UIBarButtonItem *l6 = [[UIBarButtonItem alloc] initWithCustomView:GRButton(GRTypeDribble, 0, 0, 30, self, @selector(action:), color, GRStyleIn)];
-    UIBarButtonItem *l7 = [[UIBarButtonItem alloc] initWithCustomView:GRButton(GRTypeFlickr, 0, 0, 30, self, @selector(action:), color, GRStyleIn)];
+    UIBarButtonItem *l1 = [[UIBarButtonItem alloc] initWithCustomView:GRButton(GRTypeMail, 0, 0, 32, self, @selector(action:), color, GRStyleIn)];
+    UIBarButtonItem *l2 = [[UIBarButtonItem alloc] initWithCustomView:GRButton(GRTypeTwitter, 0, 0, 32, self, @selector(action:), color, GRStyleIn)];
+    UIBarButtonItem *l3 = [[UIBarButtonItem alloc] initWithCustomView:GRButton(GRTypeFacebook, 0, 0, 32, self, @selector(action:), color, GRStyleIn)];
+    UIBarButtonItem *l4 = [[UIBarButtonItem alloc] initWithCustomView:GRButton(GRTypeGooglePlus, 0, 0, 32, self, @selector(action:), color, GRStyleIn)];
+    UIBarButtonItem *l5 = [[UIBarButtonItem alloc] initWithCustomView:GRButton(GRTypePinterest, 0, 0, 32, self, @selector(action:), color, GRStyleIn)];
+    UIBarButtonItem *l6 = [[UIBarButtonItem alloc] initWithCustomView:GRButton(GRTypeDribble, 0, 0, 32, self, @selector(action:), color, GRStyleIn)];
+    UIBarButtonItem *l7 = [[UIBarButtonItem alloc] initWithCustomView:GRButton(GRTypeFlickr, 0, 0, 32, self, @selector(action:), color, GRStyleIn)];
     
     NSArray *leftButtons = [[NSArray alloc] initWithObjects:l1, l2, l3, l4, l5, l6, l7, nil];
     self.navigationItem.leftBarButtonItems = leftButtons;
     
     
     //// NavigationBar Right Buttons
-    UIBarButtonItem *r1 = [[UIBarButtonItem alloc] initWithCustomView:GRButton(GRTypeMailCircle, 0, 0, 30, self, @selector(action:), color, GRStyleIn)];
-    UIBarButtonItem *r2 = [[UIBarButtonItem alloc] initWithCustomView:GRButton(GRTypeTwitterCircle, 0, 0, 30, self, @selector(action:), color, GRStyleIn)];
-    UIBarButtonItem *r3 = [[UIBarButtonItem alloc] initWithCustomView:GRButton(GRTypeFacebookCircle, 0, 0, 30, self, @selector(action:), color, GRStyleIn)];
-    UIBarButtonItem *r4 = [[UIBarButtonItem alloc] initWithCustomView:GRButton(GRTypeGooglePlusCircle, 0, 0, 30, self, @selector(action:), color, GRStyleIn)];
-    UIBarButtonItem *r5 = [[UIBarButtonItem alloc] initWithCustomView:GRButton(GRTypePinterestCircle, 0, 0, 30, self, @selector(action:), color, GRStyleIn)];
-    UIBarButtonItem *r6 = [[UIBarButtonItem alloc] initWithCustomView:GRButton(GRTypeDribbleCircle, 0, 0, 30, self, @selector(action:), color, GRStyleIn)];
-    UIBarButtonItem *r7 = [[UIBarButtonItem alloc] initWithCustomView:GRButton(GRTypeFlickrCircle, 0, 0, 30, self, @selector(action:), color, GRStyleIn)];
+    UIBarButtonItem *r1 = [[UIBarButtonItem alloc] initWithCustomView:GRButton(GRTypeMailCircle, 0, 0, 32, self, @selector(action:), color, GRStyleIn)];
+    UIBarButtonItem *r2 = [[UIBarButtonItem alloc] initWithCustomView:GRButton(GRTypeTwitterCircle, 0, 0, 32, self, @selector(action:), color, GRStyleIn)];
+    UIBarButtonItem *r3 = [[UIBarButtonItem alloc] initWithCustomView:GRButton(GRTypeFacebookCircle, 0, 0, 32, self, @selector(action:), color, GRStyleIn)];
+    UIBarButtonItem *r4 = [[UIBarButtonItem alloc] initWithCustomView:GRButton(GRTypeGooglePlusCircle, 0, 0, 32, self, @selector(action:), color, GRStyleIn)];
+    UIBarButtonItem *r5 = [[UIBarButtonItem alloc] initWithCustomView:GRButton(GRTypePinterestCircle, 0, 0, 32, self, @selector(action:), color, GRStyleIn)];
+    UIBarButtonItem *r6 = [[UIBarButtonItem alloc] initWithCustomView:GRButton(GRTypeDribbleCircle, 0, 0, 32, self, @selector(action:), color, GRStyleIn)];
+    UIBarButtonItem *r7 = [[UIBarButtonItem alloc] initWithCustomView:GRButton(GRTypeFlickrCircle, 0, 0, 32, self, @selector(action:), color, GRStyleIn)];
     
     NSArray *rightButtons = [[NSArray alloc] initWithObjects:r1, r2, r3, r4, r5, r6, r7, nil];
     self.navigationItem.rightBarButtonItems = rightButtons;
