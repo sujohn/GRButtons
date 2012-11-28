@@ -21,7 +21,7 @@
     [super viewDidLoad];
 	self.title = @"GRButtons";
     
-    UIColor *color = [UIColor lightGrayColor];
+    UIColor *color = [UIColor grayColor];
     int size = 128;
     
     //// Simple Buttons
@@ -55,9 +55,9 @@
     
     
     //// Different Types
-    [self.view addSubview:GRButton(GRTypeTwitter, 10, 440, size, self, @selector(action:), color, GRStyleIn)];
-    [self.view addSubview:GRButton(GRTypeTwitter, 148, 440, size, self, @selector(action:), color, GRStyleOut)];
-    [self.view addSubview:GRButton(GRTypeTwitter, 286, 440, size, self, @selector(action:), color, GRStyleNormal)];
+    [self.view addSubview:GRButton(GRTypeTwitter, 10, 440, size, self, @selector(action:), [UIColor lightGrayColor], GRStyleIn)];
+    [self.view addSubview:GRButton(GRTypeTwitter, 148, 440, size, self, @selector(action:), [UIColor lightGrayColor], GRStyleOut)];
+    [self.view addSubview:GRButton(GRTypeTwitter, 286, 440, size, self, @selector(action:), [UIColor lightGrayColor], GRStyleNormal)];
     
     
     //// Different Sizes

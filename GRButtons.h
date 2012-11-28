@@ -48,7 +48,7 @@ typedef enum {
 
 // Example:
 //
-// UIButton *button = GRButton(GRTypeMailRect, 10, 160, 32, self, @selector(action:), color, GRStyleIn)];
+// UIButton *button = GRButton(GRTypeMailRect, 10, 160, 32, self, @selector(action:), color, GRStyleIn);
 //
 
 UIButton *GRButton(GRButtonType type, int xPosition, int yPosition, CGFloat size, id target, SEL selector, UIColor *normalBgColor, GRButtonStyle normalStyle);
