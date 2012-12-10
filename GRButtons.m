@@ -34,6 +34,105 @@ UIBezierPath *FacebookPath(CGRect frame) {
     return bezierPath;
 }
 
+UIBezierPath *FacebookRectPath(CGRect frame) {
+    float p = CGRectGetHeight(frame) / 512;
+    
+    /// Bezier Drawing
+    UIBezierPath* bezierPath = [UIBezierPath bezierPath];
+    [bezierPath moveToPoint: CGPointMake(p*426.67, p*-0)];
+    [bezierPath addLineToPoint: CGPointMake(p*85.34, p*-0)];
+    [bezierPath addCurveToPoint: CGPointMake(p*0, p*85.34) controlPoint1: CGPointMake(p*38.41, p*-0) controlPoint2: CGPointMake(p*0, p*38.41)];
+    [bezierPath addLineToPoint: CGPointMake(p*0, p*426.66)];
+    [bezierPath addCurveToPoint: CGPointMake(p*85.34, p*512) controlPoint1: CGPointMake(p*0, p*473.63) controlPoint2: CGPointMake(p*38.41, p*512)];
+    [bezierPath addLineToPoint: CGPointMake(p*426.67, p*512)];
+    [bezierPath addCurveToPoint: CGPointMake(p*512, p*426.66) controlPoint1: CGPointMake(p*473.61, p*512) controlPoint2: CGPointMake(p*512, p*473.63)];
+    [bezierPath addLineToPoint: CGPointMake(p*512, p*85.34)];
+    [bezierPath addCurveToPoint: CGPointMake(p*426.67, p*-0) controlPoint1: CGPointMake(p*512, p*38.41) controlPoint2: CGPointMake(p*473.61, p*-0)];
+    [bezierPath closePath];
+    [bezierPath moveToPoint: CGPointMake(p*435.3, p*256)];
+    [bezierPath addLineToPoint: CGPointMake(p*352, p*256)];
+    [bezierPath addLineToPoint: CGPointMake(p*352, p*480)];
+    [bezierPath addLineToPoint: CGPointMake(p*256, p*480)];
+    [bezierPath addLineToPoint: CGPointMake(p*256, p*256)];
+    [bezierPath addLineToPoint: CGPointMake(p*209.74, p*256)];
+    [bezierPath addLineToPoint: CGPointMake(p*209.74, p*182.72)];
+    [bezierPath addLineToPoint: CGPointMake(p*256, p*182.72)];
+    [bezierPath addLineToPoint: CGPointMake(p*256, p*135.12)];
+    [bezierPath addCurveToPoint: CGPointMake(p*359.94, p*32) controlPoint1: CGPointMake(p*256, p*70.45) controlPoint2: CGPointMake(p*283.9, p*32)];
+    [bezierPath addLineToPoint: CGPointMake(p*447.56, p*32)];
+    [bezierPath addLineToPoint: CGPointMake(p*447.56, p*111.28)];
+    [bezierPath addLineToPoint: CGPointMake(p*375.99, p*111.28)];
+    [bezierPath addCurveToPoint: CGPointMake(p*352.12, p*143.04) controlPoint1: CGPointMake(p*354.75, p*111.25) controlPoint2: CGPointMake(p*352.12, p*122.36)];
+    [bezierPath addLineToPoint: CGPointMake(p*352, p*182.72)];
+    [bezierPath addLineToPoint: CGPointMake(p*448, p*182.72)];
+    [bezierPath addLineToPoint: CGPointMake(p*435.3, p*256)];
+    [bezierPath closePath];
+    
+    return bezierPath;
+}
+
+
+
+UIBezierPath *FacebookCirclePath(CGRect frame) {
+    float p = CGRectGetHeight(frame) / 512;
+    
+    UIBezierPath* bezierPath = [UIBezierPath bezierPath];
+    [bezierPath moveToPoint: CGPointMake(p*256, p*-0)];
+    [bezierPath addCurveToPoint: CGPointMake(p*0, p*256) controlPoint1: CGPointMake(p*114.62, p*-0) controlPoint2: CGPointMake(p*0, p*114.62)];
+    [bezierPath addCurveToPoint: CGPointMake(p*192, p*503.94) controlPoint1: CGPointMake(p*0, p*375.28) controlPoint2: CGPointMake(p*81.58, p*475.52)];
+    [bezierPath addLineToPoint: CGPointMake(p*192, p*288)];
+    [bezierPath addLineToPoint: CGPointMake(p*145.74, p*288)];
+    [bezierPath addLineToPoint: CGPointMake(p*145.74, p*214.72)];
+    [bezierPath addLineToPoint: CGPointMake(p*192, p*214.72)];
+    [bezierPath addLineToPoint: CGPointMake(p*192, p*167.12)];
+    [bezierPath addCurveToPoint: CGPointMake(p*295.94, p*64) controlPoint1: CGPointMake(p*192, p*102.45) controlPoint2: CGPointMake(p*219.9, p*64)];
+    [bezierPath addLineToPoint: CGPointMake(p*383.56, p*64)];
+    [bezierPath addLineToPoint: CGPointMake(p*383.56, p*143.28)];
+    [bezierPath addLineToPoint: CGPointMake(p*311.99, p*143.28)];
+    [bezierPath addCurveToPoint: CGPointMake(p*288.12, p*175.04) controlPoint1: CGPointMake(p*290.75, p*143.25) controlPoint2: CGPointMake(p*288.12, p*154.36)];
+    [bezierPath addLineToPoint: CGPointMake(p*288, p*214.72)];
+    [bezierPath addLineToPoint: CGPointMake(p*384, p*214.72)];
+    [bezierPath addLineToPoint: CGPointMake(p*371.3, p*288)];
+    [bezierPath addLineToPoint: CGPointMake(p*288, p*288)];
+    [bezierPath addLineToPoint: CGPointMake(p*288, p*510.01)];
+    [bezierPath addCurveToPoint: CGPointMake(p*512, p*256) controlPoint1: CGPointMake(p*414.28, p*494.26) controlPoint2: CGPointMake(p*512, p*386.55)];
+    [bezierPath addCurveToPoint: CGPointMake(p*256, p*-0) controlPoint1: CGPointMake(p*512, p*114.62) controlPoint2: CGPointMake(p*397.38, p*-0)];
+    [bezierPath closePath];
+    
+    return bezierPath;
+}
+
+UIBezierPath *TwitterPath(CGRect frame) {
+    float p = CGRectGetHeight(frame) / 512;
+    
+    UIBezierPath* bezierPath = [UIBezierPath bezierPath];
+    [bezierPath moveToPoint: CGPointMake(p*512, p*97.21)];
+    [bezierPath addCurveToPoint: CGPointMake(p*451.67, p*113.75) controlPoint1: CGPointMake(p*493.16, p*105.56) controlPoint2: CGPointMake(p*472.92, p*111.21)];
+    [bezierPath addCurveToPoint: CGPointMake(p*497.86, p*55.63) controlPoint1: CGPointMake(p*473.36, p*100.75) controlPoint2: CGPointMake(p*490.01, p*80.16)];
+    [bezierPath addCurveToPoint: CGPointMake(p*431.15, p*81.12) controlPoint1: CGPointMake(p*477.56, p*67.67) controlPoint2: CGPointMake(p*455.08, p*76.41)];
+    [bezierPath addCurveToPoint: CGPointMake(p*354.48, p*47.95) controlPoint1: CGPointMake(p*411.99, p*60.71) controlPoint2: CGPointMake(p*384.69, p*47.95)];
+    [bezierPath addCurveToPoint: CGPointMake(p*249.43, p*152.99) controlPoint1: CGPointMake(p*296.47, p*47.95) controlPoint2: CGPointMake(p*249.43, p*94.98)];
+    [bezierPath addCurveToPoint: CGPointMake(p*252.15, p*176.93) controlPoint1: CGPointMake(p*249.43, p*161.23) controlPoint2: CGPointMake(p*250.36, p*169.24)];
+    [bezierPath addCurveToPoint: CGPointMake(p*35.65, p*67.18) controlPoint1: CGPointMake(p*164.85, p*172.55) controlPoint2: CGPointMake(p*87.45, p*130.73)];
+    [bezierPath addCurveToPoint: CGPointMake(p*21.42, p*119.99) controlPoint1: CGPointMake(p*26.6, p*82.69) controlPoint2: CGPointMake(p*21.42, p*100.74)];
+    [bezierPath addCurveToPoint: CGPointMake(p*68.15, p*207.42) controlPoint1: CGPointMake(p*21.42, p*156.43) controlPoint2: CGPointMake(p*39.97, p*188.58)];
+    [bezierPath addCurveToPoint: CGPointMake(p*20.58, p*194.28) controlPoint1: CGPointMake(p*50.93, p*206.88) controlPoint2: CGPointMake(p*34.74, p*202.15)];
+    [bezierPath addCurveToPoint: CGPointMake(p*20.57, p*195.6) controlPoint1: CGPointMake(p*20.57, p*194.72) controlPoint2: CGPointMake(p*20.57, p*195.16)];
+    [bezierPath addCurveToPoint: CGPointMake(p*104.83, p*298.6) controlPoint1: CGPointMake(p*20.57, p*246.5) controlPoint2: CGPointMake(p*56.77, p*288.95)];
+    [bezierPath addCurveToPoint: CGPointMake(p*77.15, p*302.29) controlPoint1: CGPointMake(p*96.01, p*301) controlPoint2: CGPointMake(p*86.73, p*302.29)];
+    [bezierPath addCurveToPoint: CGPointMake(p*57.39, p*300.4) controlPoint1: CGPointMake(p*70.38, p*302.29) controlPoint2: CGPointMake(p*63.8, p*301.63)];
+    [bezierPath addCurveToPoint: CGPointMake(p*155.51, p*373.35) controlPoint1: CGPointMake(p*70.76, p*342.13) controlPoint2: CGPointMake(p*109.55, p*372.51)];
+    [bezierPath addCurveToPoint: CGPointMake(p*25.06, p*418.32) controlPoint1: CGPointMake(p*119.56, p*401.53) controlPoint2: CGPointMake(p*74.27, p*418.32)];
+    [bezierPath addCurveToPoint: CGPointMake(p*-0, p*416.85) controlPoint1: CGPointMake(p*16.58, p*418.32) controlPoint2: CGPointMake(p*8.22, p*417.82)];
+    [bezierPath addCurveToPoint: CGPointMake(p*161.02, p*464.04) controlPoint1: CGPointMake(p*46.48, p*446.65) controlPoint2: CGPointMake(p*101.7, p*464.04)];
+    [bezierPath addCurveToPoint: CGPointMake(p*459.89, p*165.17) controlPoint1: CGPointMake(p*354.23, p*464.04) controlPoint2: CGPointMake(p*459.89, p*303.98)];
+    [bezierPath addCurveToPoint: CGPointMake(p*459.58, p*151.58) controlPoint1: CGPointMake(p*459.89, p*160.62) controlPoint2: CGPointMake(p*459.78, p*156.09)];
+    [bezierPath addCurveToPoint: CGPointMake(p*512, p*97.21) controlPoint1: CGPointMake(p*480.11, p*136.77) controlPoint2: CGPointMake(p*497.92, p*118.27)];
+    [bezierPath closePath];
+    
+    return bezierPath;
+}
+
 UIBezierPath *TwitterRectPath(CGRect frame) {
     float p = CGRectGetHeight(frame) / 512;
     
@@ -107,103 +206,6 @@ UIBezierPath *TwitterCirclePath(CGRect frame) {
     [bezierPath addCurveToPoint: CGPointMake(p*397.4, p*153.2) controlPoint1: CGPointMake(p*425.11, p*128.93) controlPoint2: CGPointMake(p*413.07, p*143.81)];
     [bezierPath addCurveToPoint: CGPointMake(p*441, p*141.25) controlPoint1: CGPointMake(p*412.76, p*151.37) controlPoint2: CGPointMake(p*427.39, p*147.28)];
     [bezierPath addCurveToPoint: CGPointMake(p*403.12, p*180.54) controlPoint1: CGPointMake(p*430.82, p*156.47) controlPoint2: CGPointMake(p*417.95, p*169.84)];
-    [bezierPath closePath];
-    
-    return bezierPath;
-}
-
-UIBezierPath *FacebookRectPath(CGRect frame) {
-    float p = CGRectGetHeight(frame) / 512;
-    
-    /// Bezier Drawing
-    UIBezierPath* bezierPath = [UIBezierPath bezierPath];
-    [bezierPath moveToPoint: CGPointMake(p*426.67, p*-0)];
-    [bezierPath addLineToPoint: CGPointMake(p*85.34, p*-0)];
-    [bezierPath addCurveToPoint: CGPointMake(p*0, p*85.34) controlPoint1: CGPointMake(p*38.41, p*-0) controlPoint2: CGPointMake(p*0, p*38.41)];
-    [bezierPath addLineToPoint: CGPointMake(p*0, p*426.66)];
-    [bezierPath addCurveToPoint: CGPointMake(p*85.34, p*512) controlPoint1: CGPointMake(p*0, p*473.63) controlPoint2: CGPointMake(p*38.41, p*512)];
-    [bezierPath addLineToPoint: CGPointMake(p*426.67, p*512)];
-    [bezierPath addCurveToPoint: CGPointMake(p*512, p*426.66) controlPoint1: CGPointMake(p*473.61, p*512) controlPoint2: CGPointMake(p*512, p*473.63)];
-    [bezierPath addLineToPoint: CGPointMake(p*512, p*85.34)];
-    [bezierPath addCurveToPoint: CGPointMake(p*426.67, p*-0) controlPoint1: CGPointMake(p*512, p*38.41) controlPoint2: CGPointMake(p*473.61, p*-0)];
-    [bezierPath closePath];
-    [bezierPath moveToPoint: CGPointMake(p*435.3, p*256)];
-    [bezierPath addLineToPoint: CGPointMake(p*352, p*256)];
-    [bezierPath addLineToPoint: CGPointMake(p*352, p*480)];
-    [bezierPath addLineToPoint: CGPointMake(p*256, p*480)];
-    [bezierPath addLineToPoint: CGPointMake(p*256, p*256)];
-    [bezierPath addLineToPoint: CGPointMake(p*209.74, p*256)];
-    [bezierPath addLineToPoint: CGPointMake(p*209.74, p*182.72)];
-    [bezierPath addLineToPoint: CGPointMake(p*256, p*182.72)];
-    [bezierPath addLineToPoint: CGPointMake(p*256, p*135.12)];
-    [bezierPath addCurveToPoint: CGPointMake(p*359.94, p*32) controlPoint1: CGPointMake(p*256, p*70.45) controlPoint2: CGPointMake(p*283.9, p*32)];
-    [bezierPath addLineToPoint: CGPointMake(p*447.56, p*32)];
-    [bezierPath addLineToPoint: CGPointMake(p*447.56, p*111.28)];
-    [bezierPath addLineToPoint: CGPointMake(p*375.99, p*111.28)];
-    [bezierPath addCurveToPoint: CGPointMake(p*352.12, p*143.04) controlPoint1: CGPointMake(p*354.75, p*111.25) controlPoint2: CGPointMake(p*352.12, p*122.36)];
-    [bezierPath addLineToPoint: CGPointMake(p*352, p*182.72)];
-    [bezierPath addLineToPoint: CGPointMake(p*448, p*182.72)];
-    [bezierPath addLineToPoint: CGPointMake(p*435.3, p*256)];
-    [bezierPath closePath];
-    
-    return bezierPath;
-}
-
-UIBezierPath *FacebookCirclePath(CGRect frame) {
-    float p = CGRectGetHeight(frame) / 512;
-    
-    UIBezierPath* bezierPath = [UIBezierPath bezierPath];
-    [bezierPath moveToPoint: CGPointMake(p*256, p*-0)];
-    [bezierPath addCurveToPoint: CGPointMake(p*0, p*256) controlPoint1: CGPointMake(p*114.62, p*-0) controlPoint2: CGPointMake(p*0, p*114.62)];
-    [bezierPath addCurveToPoint: CGPointMake(p*192, p*503.94) controlPoint1: CGPointMake(p*0, p*375.28) controlPoint2: CGPointMake(p*81.58, p*475.52)];
-    [bezierPath addLineToPoint: CGPointMake(p*192, p*288)];
-    [bezierPath addLineToPoint: CGPointMake(p*145.74, p*288)];
-    [bezierPath addLineToPoint: CGPointMake(p*145.74, p*214.72)];
-    [bezierPath addLineToPoint: CGPointMake(p*192, p*214.72)];
-    [bezierPath addLineToPoint: CGPointMake(p*192, p*167.12)];
-    [bezierPath addCurveToPoint: CGPointMake(p*295.94, p*64) controlPoint1: CGPointMake(p*192, p*102.45) controlPoint2: CGPointMake(p*219.9, p*64)];
-    [bezierPath addLineToPoint: CGPointMake(p*383.56, p*64)];
-    [bezierPath addLineToPoint: CGPointMake(p*383.56, p*143.28)];
-    [bezierPath addLineToPoint: CGPointMake(p*311.99, p*143.28)];
-    [bezierPath addCurveToPoint: CGPointMake(p*288.12, p*175.04) controlPoint1: CGPointMake(p*290.75, p*143.25) controlPoint2: CGPointMake(p*288.12, p*154.36)];
-    [bezierPath addLineToPoint: CGPointMake(p*288, p*214.72)];
-    [bezierPath addLineToPoint: CGPointMake(p*384, p*214.72)];
-    [bezierPath addLineToPoint: CGPointMake(p*371.3, p*288)];
-    [bezierPath addLineToPoint: CGPointMake(p*288, p*288)];
-    [bezierPath addLineToPoint: CGPointMake(p*288, p*510.01)];
-    [bezierPath addCurveToPoint: CGPointMake(p*512, p*256) controlPoint1: CGPointMake(p*414.28, p*494.26) controlPoint2: CGPointMake(p*512, p*386.55)];
-    [bezierPath addCurveToPoint: CGPointMake(p*256, p*-0) controlPoint1: CGPointMake(p*512, p*114.62) controlPoint2: CGPointMake(p*397.38, p*-0)];
-    [bezierPath closePath];
-    
-    return bezierPath;
-}
-
-UIBezierPath *TwitterPath(CGRect frame) {
-    float p = CGRectGetHeight(frame) / 512;
-    
-    UIBezierPath* bezierPath = [UIBezierPath bezierPath];
-    [bezierPath moveToPoint: CGPointMake(p*512, p*97.21)];
-    [bezierPath addCurveToPoint: CGPointMake(p*451.67, p*113.75) controlPoint1: CGPointMake(p*493.16, p*105.56) controlPoint2: CGPointMake(p*472.92, p*111.21)];
-    [bezierPath addCurveToPoint: CGPointMake(p*497.86, p*55.63) controlPoint1: CGPointMake(p*473.36, p*100.75) controlPoint2: CGPointMake(p*490.01, p*80.16)];
-    [bezierPath addCurveToPoint: CGPointMake(p*431.15, p*81.12) controlPoint1: CGPointMake(p*477.56, p*67.67) controlPoint2: CGPointMake(p*455.08, p*76.41)];
-    [bezierPath addCurveToPoint: CGPointMake(p*354.48, p*47.95) controlPoint1: CGPointMake(p*411.99, p*60.71) controlPoint2: CGPointMake(p*384.69, p*47.95)];
-    [bezierPath addCurveToPoint: CGPointMake(p*249.43, p*152.99) controlPoint1: CGPointMake(p*296.47, p*47.95) controlPoint2: CGPointMake(p*249.43, p*94.98)];
-    [bezierPath addCurveToPoint: CGPointMake(p*252.15, p*176.93) controlPoint1: CGPointMake(p*249.43, p*161.23) controlPoint2: CGPointMake(p*250.36, p*169.24)];
-    [bezierPath addCurveToPoint: CGPointMake(p*35.65, p*67.18) controlPoint1: CGPointMake(p*164.85, p*172.55) controlPoint2: CGPointMake(p*87.45, p*130.73)];
-    [bezierPath addCurveToPoint: CGPointMake(p*21.42, p*119.99) controlPoint1: CGPointMake(p*26.6, p*82.69) controlPoint2: CGPointMake(p*21.42, p*100.74)];
-    [bezierPath addCurveToPoint: CGPointMake(p*68.15, p*207.42) controlPoint1: CGPointMake(p*21.42, p*156.43) controlPoint2: CGPointMake(p*39.97, p*188.58)];
-    [bezierPath addCurveToPoint: CGPointMake(p*20.58, p*194.28) controlPoint1: CGPointMake(p*50.93, p*206.88) controlPoint2: CGPointMake(p*34.74, p*202.15)];
-    [bezierPath addCurveToPoint: CGPointMake(p*20.57, p*195.6) controlPoint1: CGPointMake(p*20.57, p*194.72) controlPoint2: CGPointMake(p*20.57, p*195.16)];
-    [bezierPath addCurveToPoint: CGPointMake(p*104.83, p*298.6) controlPoint1: CGPointMake(p*20.57, p*246.5) controlPoint2: CGPointMake(p*56.77, p*288.95)];
-    [bezierPath addCurveToPoint: CGPointMake(p*77.15, p*302.29) controlPoint1: CGPointMake(p*96.01, p*301) controlPoint2: CGPointMake(p*86.73, p*302.29)];
-    [bezierPath addCurveToPoint: CGPointMake(p*57.39, p*300.4) controlPoint1: CGPointMake(p*70.38, p*302.29) controlPoint2: CGPointMake(p*63.8, p*301.63)];
-    [bezierPath addCurveToPoint: CGPointMake(p*155.51, p*373.35) controlPoint1: CGPointMake(p*70.76, p*342.13) controlPoint2: CGPointMake(p*109.55, p*372.51)];
-    [bezierPath addCurveToPoint: CGPointMake(p*25.06, p*418.32) controlPoint1: CGPointMake(p*119.56, p*401.53) controlPoint2: CGPointMake(p*74.27, p*418.32)];
-    [bezierPath addCurveToPoint: CGPointMake(p*-0, p*416.85) controlPoint1: CGPointMake(p*16.58, p*418.32) controlPoint2: CGPointMake(p*8.22, p*417.82)];
-    [bezierPath addCurveToPoint: CGPointMake(p*161.02, p*464.04) controlPoint1: CGPointMake(p*46.48, p*446.65) controlPoint2: CGPointMake(p*101.7, p*464.04)];
-    [bezierPath addCurveToPoint: CGPointMake(p*459.89, p*165.17) controlPoint1: CGPointMake(p*354.23, p*464.04) controlPoint2: CGPointMake(p*459.89, p*303.98)];
-    [bezierPath addCurveToPoint: CGPointMake(p*459.58, p*151.58) controlPoint1: CGPointMake(p*459.89, p*160.62) controlPoint2: CGPointMake(p*459.78, p*156.09)];
-    [bezierPath addCurveToPoint: CGPointMake(p*512, p*97.21) controlPoint1: CGPointMake(p*480.11, p*136.77) controlPoint2: CGPointMake(p*497.92, p*118.27)];
     [bezierPath closePath];
     
     return bezierPath;
@@ -864,6 +866,8 @@ UIBezierPath *MailCirclePath(CGRect frame) {
 }
 
 UIImage *GRButtonBgImage(GRButtonType type, CGFloat size, UIColor *backGroundColor, GRButtonStyle style) {
+    
+    if ([[UIScreen mainScreen] respondsToSelector:@selector(scale)] && [[UIScreen mainScreen] scale] == 2) size = size*2;
     
     CGSize shadowSize;
     
