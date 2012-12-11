@@ -1012,7 +1012,9 @@ UIImage *GRButtonBgImage(GRButtonType type, CGFloat size, UIColor *backGroundCol
 UIButton *GRButton(GRButtonType type, int xPosition, int yPosition, CGFloat size, id target, SEL selector, UIColor *normalBgColor, GRButtonStyle normalStyle) {
     UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(xPosition, yPosition, size, size)];
     [button addTarget:target action:selector forControlEvents:UIControlEventTouchUpInside];
-    [button setImage:GRButtonBgImage(type, size, normalBgColor, normalStyle) forState:UIControlStateNormal];
+    [button setBackgroundImage:GRButtonBgImage(type, size, normalBgColor, normalStyle) forState:UIControlStateNormal];
+    [button setBackgroundImage:GRButtonBgImage(type, size, [UIColor blackColor], normalStyle) forState:UIControlStateHighlighted];
+    [button setAdjustsImageWhenHighlighted:NO];
     
     return button;
 }
