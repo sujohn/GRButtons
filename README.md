@@ -3,6 +3,7 @@
 - create social network buttons without any image
 - easy to embed into any project, two files are needed
 - example project included
+- ARC compatible
 
 Avaliable buttons:
 - Facebook
@@ -24,13 +25,13 @@ Avaliable buttons:
 # Examples:
 
 Simple UIButton:
-
+``` objective-c
 	[self.view addSubview:GRButton(GRTypeMailRect, 10, 160, 32, self, @selector(action:), [UIColor grayColor], GRStyleIn)];
-
+```
 UIBarButtonItem:
-
+``` objective-c
 	UIBarButtonItem *button = [[UIBarButtonItem alloc] initWithCustomView:GRButton(GRTypeTwitter, 0, 0, 64, self, @selector(action:), color, GRStyleIn)];
-	
+```	
 ## License (MIT)
 Copyright (c) 2012 Robert Goncz
 
